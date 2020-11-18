@@ -1,5 +1,16 @@
+html,
 body{
-  font-size: 16px;  
+  height: 100%;
+}
+
+body{
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  flex-grow: 1;
 }
 
 .container-page{
@@ -16,4 +27,8 @@ body{
 
 a{
   display: block;
+  @extend %rubik-400;
+  color: #7b7b7b;
+  font-size: 14px;
+  line-height: 23px;
 }
