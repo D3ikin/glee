@@ -5,6 +5,7 @@ body{
 
 body{
   font-size: 16px;
+  line-height: 22px;
   display: flex;
   flex-direction: column;
 }
@@ -31,4 +32,35 @@ a{
   color: #7b7b7b;
   font-size: 14px;
   line-height: 23px;
+}
+
+.title{
+  @extend %dmsans-700;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.btn-link{
+  padding: 25px 20px 25px 25px;
+  background-color: #a3bbc8;
+  width: 200px;
+  @extend %rubik-500;
+  font-size: 15px;
+  line-height: 12px;
+  color: #fff;
+  outline: none;
+}
+
+.filter-btn{
+  padding: 0;
+  @extend %dmsans-700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #8b8b8b;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  & + .filter-btn{
+    margin-left: 27px;
+  }
 }
