@@ -68,3 +68,46 @@ a{
 .mixitup-control-active{
   color: #000;
 }
+
+.breadcrumbs{
+  background-color: #edf1f4;
+  text-align: center;
+  padding: 30px 0;
+  &__title{
+    text-transform: capitalize;
+    @extend %rubik-400;
+  }
+  &__list{
+    display: flex;
+    justify-content: center;
+    color: #222933;
+  }
+  &__item{
+    margin-right: 4px;
+    padding-right: 10px;
+    position: relative;
+    &::after{
+      content: "/";
+      position: absolute;
+      top: 1px;
+      right: 0px;
+      @extend %rubik-400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    &:last-child{
+      margin-right: 0;
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link{
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: inherit;
+    text-transform: capitalize;
+  }
+}
