@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee.</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container-page">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="logo">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Home +
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                About
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Services
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Pages +
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                News
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-nav">
+          <a class="user-nav__link--search" href="#">
+            <img class="user-nav__link-img" src="images/icons/search.svg" alt="search icon">
+          </a>
+          <div class="user-nav__wrapper">
+            <a class="user-nav__link" href="#">
+              <img class="user-nav__link-img" src="images/icons/heart.svg" alt="heart icon">
+              <span class="user-nav__num">0</span>
+            </a>
+            <a class="user-nav__link" href="#">
+              <img class="user-nav__link-img" src="images/icons/cart.svg" alt="cart icon">
+              <span class="user-nav__num">0</span>
+            </a>
+          </div>
+          <button class="user-nav__btn">
+            <img src="images/icons/user-btn.svg" alt="user button">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="breadcrumbs">
+      <div class="container">
+        <h2 class="breadcrumbs__title title">
+          Product list 1
+        </h2>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              home
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              Product list 1
+            </a>
+        </ul>
+      </div>
+    </section>
+
+    <section class="shop">
+      <div class="container">
+        <div class="shop__inner">
+          <div class="shop__filters filter">
+
+            <div class="filter__item filter-category">
+              <h3 class="shop__filter-title">
+                CATEGORY
+              </h3>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <p>Chair
+                    <p>
+                      <span><img src="images/icons/right.svg" alt=""></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <p>Table
+                    <p>
+                      <span><img src="images/icons/right.svg" alt="right"></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <p>Lamp
+                    <p>
+                      <span><img src="images/icons/right.svg" alt=""></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <p>Watch
+                    <p>
+                      <span><img src="images/icons/right.svg" alt="right"></span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <p>Clock
+                    <p>
+                      <span><img src="images/icons/right.svg" alt="right"></span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter-price">
+              <h3 class="shop__filter-title">
+                Price
+              </h3>
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text" data-type="double" data-min="0" data-max="1000"
+                  data-from="200" data-to="500">
+                <label class="filter-price__label">
+                  <span class="filter-price__from"></span>
+                  <span class="filter-price__to"></span>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter-brand">
+              <h3 class="shop__filter-title">
+                brand
+              </h3>
+              <form class="filter-brand__form" action="#">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>RFL</span>
+                    <span>(10)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Brothers</span>
+                    <span>(21)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Regal</span>
+                    <span>(3)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Nadia</span>
+                    <span>(14)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Otobi</span>
+                    <span>(6)</span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="advise-product">
+              <h3 class="shop__filter-title">
+                RECENT PRODUCTS                
+              </h3>
+              <div class="advise-product__items">
+                <div class="advise-product__item">
+                  <a class="advise-product__item-link" href="#"></a>
+                  <img class="advise-product__item-img" src="images/products/advise/image-1.png" alt="image">
+                  <div class="advise-product__item-content">
+                    <h6 class="advise-product__item-title">
+                      Pendant lamp
+                    </h6>
+                    <div class="advise-product__item-star" data-rateyo-rating="4.5"></div>
+                    <div class="advise-product__item-price">
+                      23$
+                    </div>
+                  </div>
+                </div>
+                <div class="advise-product__item">
+                  <a class="advise-product__item-link" href="#"></a>
+                  <img class="advise-product__item-img" src="images/products/advise/image-2.png" alt="image">
+                  <div class="advise-product__item-content">
+                    <h6 class="advise-product__item-title">
+                      Pendant lamp 
+                    </h6>
+                    <div class="advise-product__item-star" data-rateyo-rating="4"></div>
+                    <div class="advise-product__item-price">
+                      23$
+                    </div>
+                  </div>
+                </div>
+                <div class="advise-product__item">
+                  <a class="advise-product__item-link" href="#"></a>
+                  <img class="advise-product__item-img" src="images/products/advise/image-3.png" alt="image">
+                  <div class="advise-product__item-content">
+                    <h6 class="advise-product__item-title">
+                      Pendant lamp
+                    </h6>
+                    <div class="advise-product__item-star" data-rateyo-rating="5"></div>
+                    <div class="advise-product__item-price">
+                      23$
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="partners partners--page-login">
+      <div class="container">
+        <div class="partners__wrapper">
+          <img class="partners__img" src="images/partners/partner-1.png" alt="logo partner">
+          <img class="partners__img" src="images/partners/partner-2.png" alt="logo partner">
+          <img class="partners__img" src="images/partners/partner-3.png" alt="logo partner">
+          <img class="partners__img" src="images/partners/partner-4.png" alt="logo partner">
+          <img class="partners__img" src="images/partners/partner-5.png" alt="logo partner">
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top__contacts">
+          <a class="logo footer-top__logo" href="#">
+            <img class="logo__img" src="images/logo.png" alt="logo">
+          </a>
+          <a class="footer-top__adress" href="#">
+            ADDRESS: 4772 Wines Lane
+            Houston, TX 77032
+          </a>
+          <a class="footer-top__phone" href="tel:+8323475843">
+            Telephone: +832-347-5843
+          </a>
+          <a class="footer-top__email" href="mailto:contact@Glee.com">
+            Email: contact@Glee.com
+          </a>
+        </div>
+        <div class="footer-top__nav">
+          <h6 class="footer-top__title">
+            Services
+          </h6>
+          <ul class="footer-top__nav-list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                About us
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Return Policy
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Our Blog
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Contact Us
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Terms & Condition
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__nav">
+          <h6 class="footer-top__title">
+            Account
+          </h6>
+          <ul class="footer-top__nav-list">
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Your Account
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Checkout
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Login
+              </a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer-top__list-link" href="#">
+                Register
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__newsletter">
+          <h6 class="footer-top__title">
+            newsletter
+          </h6>
+          <p class="footer-top__text">
+            Subscribe by our newsletter and get
+            update protidin.
+          </p>
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__form-input" placeholder="Email address" type="email" required>
+            <button class="footer-top__form-btn" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">
+          ©2020 CopyRight Example. All rights reserved.
+        </p>
+        <ul class="footer-bottom__nav-list">
+          <li class="footer-bottom__nav-item">
+            <a class="footer-bottom__nav-link" href="#">
+              Home
+            </a>
+          </li>
+          <li class="footer-bottom__nav-item">
+            <a class="footer-bottom__nav-link" href="#">
+              About
+            </a>
+          </li>
+          <li class="footer-bottom__nav-item">
+            <a class="footer-bottom__nav-link" href="#">
+              Blog
+            </a>
+          </li>
+          <li class="footer-bottom__nav-item">
+            <a class="footer-bottom__nav-link" href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
