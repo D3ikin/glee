@@ -320,52 +320,6 @@
     min-height: 800px;
     margin-bottom: 180px;
   }
-  &__item{
-    background-repeat: no-repeat;
-    background-position: center 35px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    text-align: center;
-    padding: 35px 30px;
-    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-    position: relative;
-    &:hover .products__box-links{
-      opacity: 1;
-    }
-  }
-  &__box-links{
-    display: flex;
-    align-self: center;
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: all .5s;
-  }
-  &__box-link{
-    width: 45px;
-    height: 45px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .5s;
-    svg{
-      fill: #a3bbc8;
-    }
-    &:hover{
-      background-color: #a3bbc8;
-      svg{
-        fill: #fff;
-      }
-    }
-  }
-  &__box-link + .products__box-link{
-    margin-left: 15px;
-  }
   &__tabs{
     display: flex;
     justify-content: space-between;
@@ -417,11 +371,61 @@
   }
 }
 
-.design{
-  padding: 45px 0;
-  &__title{
-    text-align: center;
-    margin-bottom: 25px;
+.products-item{
+  background-repeat: no-repeat;
+  background-position: center bottom 140px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  width: 270px;
+  height: 380px;
+  padding: 35px 30px;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  position: relative;
+  &:hover .products-item__box-links{
+    transform: scale(1);
+  }
+  &__box-links{
+    display: flex;
+    align-self: center;
+    top: 45%;
+    transform: translateY(-40%);
+    position: absolute;
+    transform: scale(0);
+    transition: all .5s;
+  }
+  &__box-link{
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: all .5s;
+    svg{
+      fill: #a3bbc8;
+    }
+    &:hover{
+      background-color: #a3bbc8;
+      svg{
+        fill: #fff;
+      }
+    }
+  }
+  &__box-link + .products-item__box-link{
+    margin-left: 15px;
+  }
+}
+  
+  .design{
+    padding: 45px 0;
+    &__title{
+      text-align: center;
+      margin-bottom: 25px;
   }
   &__filter{
     text-align: center;
@@ -921,6 +925,14 @@
   }
   &__filters{
     width: 270px;
+    margin-right: 30px;
+  }
+  &__product-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 380px;
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
   }
 }
 
