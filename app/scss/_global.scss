@@ -117,9 +117,15 @@ a{
 .pagination{
   margin-top: 110px;
   transform: translateX(13%);
+  &__page--blog{
+    transform: translateX(0);
+  }
   &__list{
     display: flex;
     justify-content: center;
+  }
+  &__list--blog{
+    justify-content: flex-start;
   }
   &__item{
     margin-right: 15px;
