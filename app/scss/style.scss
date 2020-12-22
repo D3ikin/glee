@@ -1669,6 +1669,170 @@
 }
 
 
+.contact{
+  padding: 120px 0 60px;
+  &__subtitle{
+    font-size: 16px;
+    line-height: 20px;
+    color: #a3bbc8;
+    text-align: center;
+  }
+  &__title{
+    @extend %dmsans-700;
+    font-size: 35px;
+    line-height: 57px;
+    color: $title;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__info-items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+  &__info-item{
+    width: 370px;
+    padding: 60px 20px 70px;
+    text-align: center;
+    background-color: #fafafa;
+    border: 3px solid rgba(163, 187, 200, 0);
+    transition: all .5s;
+    &:hover{
+      border: 3px solid rgba(163, 187, 200, 1);
+      .contact__info-icon{
+        background-color: #a3bbc8;
+        svg{
+          path{
+            fill: rgb(255,255,255);
+          }
+        }
+      }
+    }
+  }
+  &__info-icon{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 0 auto 60px;
+    transition: all .5s;
+    svg{
+      path{
+        transition: all .5s;
+      }
+    }
+  }
+  &__info-title{
+    @extend %dmsans-700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  &__info-link{
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #565872;
+    display: inline-block;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form{
+    max-width: 620px;
+    width: 100%;
+  }
+  &__input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+  &__input-name,
+  &__input-email{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    &::after{
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__input-name{
+    margin-right: 20px;
+    &::after{
+      background-image: url('../images/icons/input-name.svg');
+      width: 14px;
+      height: 15px;
+    }
+  }
+  &__input-email{
+    &::after{
+      background-image: url('../images/icons/input-email.svg');
+      width: 18px;
+      height: 12px;
+    }
+  }
+  &__input{
+    max-width: 300px;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px 0 15px;
+    display: inline-block;
+    border: none;
+    background-color: #fafafa;
+    outline-color: #a3bbc8;
+  }
+  &__textarea-icon{
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      background-image: url('../images/icons/textarea-icon.svg');
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 15px;
+      top: 15px;
+      right: 15px;
+    }
+  }
+  &__textarea{
+    width: 100%;
+    height: 175px;
+    padding: 15px 15px;
+    border: none;
+    background-color: #fafafa;
+    outline-color: #a3bbc8;
+    margin-bottom: 30px;
+  }
+  &__form-btn{
+    width: 210px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #a3bbc8;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+      background-color: $title;
+    }
+  }
+}
+
 
 
 @import 'media';
